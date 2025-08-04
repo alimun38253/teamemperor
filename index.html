@@ -66,30 +66,50 @@
     }
 
     .members {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 30px;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-    .member-card {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
-      width: 200px;
-      box-shadow: 0 0 10px #222;
-    }
+.member-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  width: calc(33.33% - 40px); /* 3 per row with gap */
+  max-width: 250px;
+  min-width: 220px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
 
-    .member-card h3 {
-      margin: 10px 0 5px;
-      color: #ff4c4c;
-    }
+.member-card:hover {
+  transform: scale(1.05);
+}
 
-    .member-card p {
-      font-size: 0.95em;
-      color: #aaa;
-    }
+.member-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  background: #000;
+}
+
+.member-card h3 {
+  margin: 10px 0 5px;
+  color: #ff4c4c;
+  font-size: 1em;
+}
+
+.member-card p {
+  font-size: 0.85em;
+  color: #aaa;
+}
+
 
     footer {
       background-color: #111;
@@ -125,46 +145,50 @@
     <p style="font-size: medium;">
       Team Emperor is a competitive Free Fire Team focused on Strategy , Skills And Domination. 
     </p>
-  
   </div>
 
-  <div class="section" id="members">
+<div class="section" id="members">
   <h2>Our Team</h2>
-  <style>
-  .member-card {
-    text-align: center;
-    margin: 20px;
-  }
-
-  .member-card img {
-    width: 100px;          /* Passport-size width */
-    height: 120px;        /* Passport-size height */
-    object-fit: cover;    /* Maintain face crop */
-    border-radius: 4px;   /* Slightly rounded corners like a photo */
-    margin-bottom: 8px;
-    border: 0px solid #ccc;
-  }
-</style>
   <div class="members">
     <div class="member-card">
       <img src="https://www.pngarts.com/files/10/Default-Profile-Picture-Download-PNG-Image.png" alt="Member Photo">
-      <h3>Fahim</h3>
-      <p>Sniper Specialist</p>
+      <h3>EMP-SNITCH75</h3>
+      <p>Sniper</p>
     </div>
     <div class="member-card">
       <img src="https://www.pngarts.com/files/10/Default-Profile-Picture-Download-PNG-Image.png" alt="Member Photo">
-      <h3>Ronok</h3>
+      <h3>EMP-LEGACY</h3>
       <p>Supporter</p>
     </div>
     <div class="member-card">
       <img src="https://www.pngarts.com/files/10/Default-Profile-Picture-Download-PNG-Image.png" alt="Member Photo">
-      <h3>Alimun</h3>
+      <h3>EMP-ADNAN 07</h3>
+      <p>Supporter</p>
+    </div>
+    <div class="member-card">
+      <img src="https://www.pngarts.com/files/10/Default-Profile-Picture-Download-PNG-Image.png" alt="Member Photo">
+      <h3>EMP-RAF!</h3>
       <p>Rusher</p>
     </div>
     <div class="member-card">
       <img src="https://www.pngarts.com/files/10/Default-Profile-Picture-Download-PNG-Image.png" alt="Member Photo">
-      <h3>Rabby</h3>
-      <p>2nd Rusher</p>
+      <h3>EMP-BLANK</h3>
+      <p>Rusher</p>
+    </div>
+    <div class="member-card">
+      <img src="https://www.pngarts.com/files/10/Default-Profile-Picture-Download-PNG-Image.png" alt="Member Photo">
+      <h3>EMP-EMTAZ</h3>
+      <p>Rusher</p>
+    </div>
+    <div class="member-card">
+      <img src="https://www.pngarts.com/files/10/Default-Profile-Picture-Download-PNG-Image.png" alt="Member Photo">
+      <h3>EMP-EREN_DIED</h3>
+      <p>Rusher</p>
+    </div>
+    <div class="member-card">
+      <img src="https://www.pngarts.com/files/10/Default-Profile-Picture-Download-PNG-Image.png" alt="Member Photo">
+      <h3>EMP-NORMAX</h3>
+      <p>Bomber</p>
     </div>
   </div>
 </div>
